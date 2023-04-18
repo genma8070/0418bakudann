@@ -26,4 +26,10 @@ body {
 .area .zone p {
   color: black;
   font-size: 80px;
+}
+.area button {
+  background-color: darkslategrey;
+  border-radius: 10px;
+  color: white;
+  font-size: 24px;
 }/*# sourceMappingURL=style.css.map */
