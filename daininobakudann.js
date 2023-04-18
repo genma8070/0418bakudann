@@ -3,50 +3,49 @@ const max = document.getElementById("max");
 const url = document.getElementById("url");
 const title = document.getElementById("title");
 const psw = 69;
-
-
-
 const button = document.querySelector("#btn");
 const input = document.querySelector("#input");
 
 
-let x = 1;
-let z = 100;
+let minl = 1;
+let maxl = 100;
 button.addEventListener("click", function () {
 
+    const num = input.value;
 
-
-
-    const y = input.value;
-
-    
-
-
-    if (y > z | y < x) {
+    //防呆
+    if (num > maxl | num < minl) {
         title.innerText = "你是不是";
-        min.innerText =  "";
-        max.innerText =  "";
+        min.innerText = "";
+        max.innerText = "";
         url.innerText = "欠扁";
-        button.innerText = "F5重來";
-        input.value =  null;
+        button.innerText = xz;
+        input.value = null;
 
 
     }
-
-    if (y < psw && y > x) {
-        x = y;
-        min.innerText = y;
+    //設定範圍
+    if (num < psw && num > minl) {
+        title.innerText = "拆炸彈";
+        max.innerText = maxl;
+        url.innerText = "-";
+        minl = num;
+        min.innerText = num;
         input.value = null;
 
     }
-    if (y > psw && y < z) {
-        z = y;
-        max.innerText = y;
+    if (num > psw && num < maxl) {
+        title.innerText = "拆炸彈";
+        min.innerText = minl;
+        url.innerText = "-";
+        maxl = num;
+        max.innerText = num;
         input.value = null;
 
     }
-    if (y == psw) {
-        x=z=y;
+    //猜到
+    if (num == psw) {
+        minl = maxl = num;
         min.innerText = null;
         max.innerText = null;
         url.innerText = psw;
