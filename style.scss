@@ -1,0 +1,33 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: gray;
+    position: relative;
+}
+
+.area {
+    margin: auto;
+    width: 400px;
+    height: 450px;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+
+    h1 {
+        padding-top: 50px;
+        font-size: 36px;
+
+    }
+
+    .zone {
+        margin-top:-50px;
+        display: flex;
+        justify-content: space-around;
+
+        p {
+            color: black;
+            font-size: 80px;
+        }
+    }
+}
