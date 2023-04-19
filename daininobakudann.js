@@ -2,7 +2,7 @@ const min = document.getElementById("min");
 const max = document.getElementById("max");
 const url = document.getElementById("url");
 const title = document.getElementById("title");
-const psw = 69;
+const psw = Math.floor(Math.random()*100+1);
 const button = document.querySelector("#btn");
 const input = document.querySelector("#input");
 
