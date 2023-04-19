@@ -19,7 +19,7 @@ button.addEventListener("click", function () {
         min.innerText = "";
         max.innerText = "";
         url.innerText = "欠扁";
-        button.innerText = xz;
+        button.innerText = minl.toString() + "  -  " + maxl.toString();
         input.value = null;
 
 
